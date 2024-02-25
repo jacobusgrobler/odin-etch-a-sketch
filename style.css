@@ -1,0 +1,11 @@
+:root{
+    margin: 1px;
+    padding: 1px;
+}
+
+.container{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
