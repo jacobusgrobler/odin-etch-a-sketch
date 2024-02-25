@@ -3,9 +3,34 @@
     padding: 1px;
 }
 
+.heading{
+    text-align: center;
+}
+
+.gameplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     display: grid;
     width: 500px;
     height: 500px;
     border: 2px solid black;
+}
+
+.selectors{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 20px;
+}
+.button{
+    max-height: 90px;
+    max-width: 90px;
+    min-height: 70px;
+    min-width: 90px;
+    border-radius: 50%;
 }
