@@ -1,12 +1,21 @@
 :root{
     margin: 1px;
     padding: 1px;
+    font-family: joystick;
+}
+@font-face {
+    font-family: joystick;
+    src: url(fonts/joystix/joystix\ monospace.otf);
 }
 
 .heading{
     text-align: center;
+    padding-right: 120px;
 }
-
+.userresponce{
+    text-align: center;
+    padding-right: 120px;
+}
 .gameplay{
     display: flex;
     flex-direction: row;

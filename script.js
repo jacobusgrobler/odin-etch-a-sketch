@@ -2,7 +2,6 @@
 
 const buttons = {
     size: document.querySelector('.size'),
-    color: document.querySelector('.color'),
     random: document.querySelector('.random'),
     reset: document.querySelector('.reset'),
 }
@@ -11,12 +10,13 @@ const buttons = {
 document.addEventListener('DOMContentLoaded', function() {
     gridBlockSize();
 
-    //let userInputSize = document.querySelector('.size')
     buttons.size.addEventListener('click', function () {
     let sizeSelected = userSize();
     console.log(sizeSelected)
     gridBlockSize(sizeSelected);
     })
+
+    
 })
 
 function gridBlockSize(size = 16) {
@@ -28,8 +28,18 @@ function gridBlockSize(size = 16) {
 
     for (let i = 0; i < divs; i++) {
         let div = document.createElement('div');
+        div.addEventListener('mouseover', function() {
+            div.style.backgroundColor = 'black';
+        })
+        buttons.reset.addEventListener('click', function() {
+            div.style.backgroundColor = 'white';
+        })
+        buttons.random.addEventListener('click', function() {
+            div.style.backgroundColor = `hls(${Math.random() * 360}, 100%, 50%)`;
+        })
         board.insertAdjacentElement('beforeend', div);
     }
+    
 
 }
 
@@ -48,3 +58,4 @@ function userSize() {
         return input;
     }
 }
+
