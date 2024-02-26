@@ -33,13 +33,13 @@
 .selectors{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
     padding-left: 20px;
 }
 .button{
     max-height: 90px;
     max-width: 90px;
-    min-height: 70px;
+    min-height: 50px;
     min-width: 90px;
     border-radius: 50%;
 }
