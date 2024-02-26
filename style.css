@@ -1,16 +1,24 @@
 :root{
-    margin: 1px;
-    padding: 1px;
+    margin: 0px;
+    padding: 0px;
     font-family: joystick;
 }
 @font-face {
     font-family: joystick;
     src: url(fonts/joystix/joystix\ monospace.otf);
 }
+body{
+   
+    background-image: url(Images/photo-wall-white.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 900px 900px;
+}
 
 .heading{
     text-align: center;
     padding-right: 120px;
+    opacity: 0.78;
 }
 .userresponce{
     text-align: center;
@@ -27,7 +35,7 @@
     display: grid;
     width: 500px;
     height: 500px;
-    border: 2px solid black;
+    box-shadow: 0px 0px 3px 3px rgb(193, 222, 231) inset;
 }
 
 .selectors{
@@ -42,4 +50,9 @@
     min-height: 50px;
     min-width: 90px;
     border-radius: 50%;
+    border-style: none;
+    box-shadow: 0px 0px 3px 3px rgb(193, 222, 231);
+    background-color: transparent;
+    opacity: .70;
+    font-family: joystick;
 }
