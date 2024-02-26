@@ -1,4 +1,9 @@
 # odin-etch-a-sketch
+-So how will we tackle this.
+--We need to create the grid but the internal divs need to be accessible from outside the function that created them
+- How do we achieve this
+--We place the function that created the grid on the same level scope as the functions that interact with it.
+--Lets implement just this and test it so we sure it works.
 
 
 ///////////////////////////////////////////////////////////////////////////////////

@@ -18,7 +18,7 @@ body{
 .heading{
     text-align: center;
     padding-right: 120px;
-    opacity: 0.78;
+    opacity: 0.785986574;
 }
 .userresponce{
     text-align: center;
@@ -35,7 +35,7 @@ body{
     display: grid;
     width: 500px;
     height: 500px;
-    box-shadow: 0px 0px 3px 3px rgb(193, 222, 231) inset;
+    box-shadow: 0px 0px 3px 3px rgb(182, 195, 199) inset;
 }
 
 .selectors{
@@ -51,8 +51,17 @@ body{
     min-width: 90px;
     border-radius: 50%;
     border-style: none;
-    box-shadow: 0px 0px 3px 3px rgb(193, 222, 231);
+    box-shadow: 0px 0px 3px 3px rgb(182, 195, 199);
     background-color: transparent;
     opacity: .70;
     font-family: joystick;
+}
+
+.input{
+    max-width: 120px;
+    box-shadow: 0px 0px 3px 3px rgb(182, 195, 199);
+    background-color: transparent;
+    border-style: none;
+    font-family: joystick;
+    font-size: 10px;
 }
